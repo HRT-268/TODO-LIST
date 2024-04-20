@@ -50,17 +50,11 @@ const inputToDo = () => {
             // newDiv.parentNode.removeChild(newDiv)
 
             deleteTodo.addEventListener("animationend", () => {
-                // li.parentNode.removeChild(li)
-                // doneToDo.parentNode.removeChild(doneToDo)
-                // deleteTodo.parentNode.removeChild(deleteTodo)
                 newDiv.parentNode.removeChild(newDiv)
     
             })
 
             setTimeout(() => {
-                // li.parentNode.removeChild(li)
-                // doneToDo.parentNode.removeChild(doneToDo)
-                // deleteTodo.parentNode.removeChild(deleteTodo)
                 newDiv.parentNode.removeChild(newDiv)
     
             }, 100)
