@@ -1,0 +1,145 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Major+Mono+Display&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #FCFFFC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCFFFC;
+    font-family: "Comic Neue", cursive;
+    color: #040F0F;
+    
+}
+
+.container1{
+    height: 15vh;
+    align-self: center;
+}
+
+
+h1{
+    font-size: 2.5rem;
+}
+
+input {
+    width: 26rem;
+    height:6vh;
+    background-color: #d1dcdc;
+    border: none;
+    border-radius:3px ;
+    font-size: 1rem;
+    font-family:"Comic Neue", cursive;
+    font-weight: 700;
+    padding: 1rem;
+    outline: none;
+}
+
+#btn{
+    width: 3rem;
+    height: 6vh;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: #040F0F;
+    cursor: pointer;
+    transition: background-color 0.0000000000000000001s ease-in-out;
+    color: white;
+}
+
+#btn:active{
+    background-color: #218339;
+    
+}
+
+#btn:hover{
+    background-color: #218339;
+    
+}
+
+#mainContent{
+    height: 30vh;
+    
+}
+
+.list_Buttons{
+    width: 29rem;
+    background-color: #AEC2C2;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.listItem{
+    width: 20ch;
+    word-wrap: break-word;
+    font-size: 1rem;
+    font-family:"Comic Neue", cursive;
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+
+.done{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.list_Buttons .fa-solid{
+    font-size: 1.5rem;
+    transition: background-color 0.0000000000000000001s ease-in-out;
+    cursor: pointer;
+}
+
+.list_Buttons > :nth-child(2){
+    margin-left: 5rem;
+}
+
+
+
+.list_Buttons .fa-solid:active{
+    color: #218339;
+}
+
+.list_Buttons .fa-solid:hover{
+    color: #218339;
+}
+
+.animateDeleteBtn{
+    animation-name: slide-animate-delete;
+    animation-duration: 3s;
+}
+
+ @keyframes slide-animate-delete{
+    0%{transform: translateX(100px);     
+    }
+    25%{
+         opacity: 0.7;
+    }
+
+    25%{
+        opacity: 0.5;
+
+    }
+
+    25%{
+        opacity: 0.3;
+
+    }
+
+    100%{opacity: 0;
+    }
+ }
+
+
+
